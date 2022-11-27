@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Playfair+Display+SC:ital,wght@1,700&display=swap');
+
 #wrap {
     width: 100%;
 }
@@ -13,46 +15,73 @@
 
 
 
+
+
+/*내비*/
+
+#header {
+    margin: 0 auto;
+    width: 100%;
+    height: 120px;
+    border-bottom: 1.5px solid #fff;
+}
+
+
+#header .nav {
+    margin: 0 auto;
+    width: 800px;
+}
+
+#header .nav li {
+    float: left;
+    margin: 60px 50px;
+}
+
+#header .nav a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+
+
+
+
 /*메인이미지*/
 
 #main {
     width: 100%;
-    height: 1800px;
+    height: 1500px;
     background-color: black;
 }
 
 #in_main {
     width: 100%;
-    height: 1520px;
+    height: 1200px;
     background-color: black;
 }
 
 
 #mainimg {
     margin: 0 auto;
-    width: 850px;
-    height: 1200px;
+    width: 800px;
+    height: 1000px;
     border: 1px solid transparent;
     position: relative;
 }
 
-#main h3 {
-    display: inline-block;
-    transform: rotate(90deg);
-    position: absolute;
-    top: 800px;
-    left: 600px;
-    color: palegoldenrod;
-    font-size: 160px;
-}
-
 #mainimg .img_box {
     margin-top: 230px;
-    width: 850px;
-    height: 1200px;
+    width: 800px;
+    height: 1000px;
     border-radius: 450px 450px 0 0;
     overflow: hidden;
     position: relative;
+    transition: all 0.5s;
 }
 
 #main img {
@@ -63,53 +92,70 @@
 }
 
 #main h2 {
+    display: none;
     position: absolute;
-    top: 500px;
-    left: -300px;
+    top: 170px;
+    left: -280px;
     float: left;
     width: 100%;
-    font-size: 180px;
+    font-size: 175px;
     padding-right: 100px;
     box-sizing: border-box;
-    color: darksalmon;
+    color: orangered;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Playfair Display SC', serif;
+}
+
+#main h3 {
+    display: none;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 500px;
+    left: 450px;
+    color: palegoldenrod;
+    font-size: 150px;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Playfair Display SC', serif;
 }
 
 #main p {
+    display: none;
     position: absolute;
-    top: 1100px;
+    top: 800px;
     left: 150px;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 900;
     color: white;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Playfair Display SC', serif;
 }
 
 
-
-/*내비*/
-
-#header {
-    margin: 0 auto;
+#box{
+    border-top: 1.5px solid #fff;
+    margin-top: 140px;
     width: 100%;
+    height: 200px;
+}
+
+#box .txt{
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 800px;
     height: 120px;
-    border-top: 2px solid #fff;
-}
-
-
-#header .nav {
-    margin: 0 auto;
-    width: 100%;
-}
-
-#header .nav li {
-    float: left;
-    margin: 30px 100px;
-}
-
-#header .nav a {
-    display: block;
-    margin: 0 auto;
+    line-height: 30px;
     text-align: center;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 18px;
     color: #fff;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Playfair Display SC', serif;
 }
+
+
+
+
+
+
+
+
+
