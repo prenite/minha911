@@ -1,161 +1,567 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Playfair+Display+SC:ital,wght@1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Playfair+Display+SC:ital,wght@1,700&display=swap");
 
 #wrap {
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;
 }
-
-#wrap>div {
-    width: 100%;
-}
-
-#wrap>div>div {
-    margin: 0 auto;
-    width: 1500px;
-}
-
-
-
-
 
 /*내비*/
 
-#header {
-    margin: 0 auto;
-    width: 100%;
-    height: 120px;
-    border-bottom: 1.5px solid #fff;
+#menu {
+  height: 100%;
+  position: fixed;
+  background-color: #e0cb97;
+  width: 230px;
+  transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateX(-100%);
+  left: 60px;
 }
 
-
-#header .nav {
-    margin: 0 auto;
-    width: 800px;
+#menu.expanded {
+  transform: translateX(0%);
+  left: 0px;
 }
 
-#header .nav li {
-    float: left;
-    margin: 60px 50px;
+.menu-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-#header .nav a {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    color: #fff;
-    transition: all 0.5s;
+.menu-inner .qnav {
+  margin-top: 50px;
 }
 
+.menu-inner a {
+  font-size: 25px;
+  color: white;
+}
 
+#blob {
+  top: 0;
+  z-index: -1;
+  right: 60px;
+  transform: translateX(100%);
+  height: 100%;
+  position: absolute;
+}
 
+#blob-path {
+  height: 100%;
+  fill: #e0cb97;
+}
 
+.hamburger {
+  right: 30px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+}
+
+.hamburger i {
+  font-size: 30px;
+  color: white;
+}
+
+/*
+.hamburger .line {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.hamburger .line:nth-child(2) {
+  top: 50%;
+  margin-top: -2px;
+}
+
+.hamburger .line:nth-child(3) {
+  bottom: 0;
+}
+*/
+
+h1 {
+  position: fixed;
+  right: 0;
+  margin: 0;
+}
+
+.menu-inner ul {
+  padding: 0;
+  list-style: none;
+  width: 80%;
+  margin-left: 10%;
+  position: absolute;
+  top: 10px;
+}
+
+.menu-inner ul li {
+  color: #fff;
+  padding: 20px 0;
+}
 
 /*메인이미지*/
 
 #main {
-    width: 100%;
-    height: 1500px;
-    background-color: black;
+  width: 100%;
+  height: 1400px;
 }
 
 #in_main {
-    width: 100%;
-    height: 1200px;
-    background-color: black;
+  width: 100%;
+  height: 1000px;
 }
 
-
 #mainimg {
-    margin: 0 auto;
-    width: 800px;
-    height: 1000px;
-    border: 1px solid transparent;
-    position: relative;
+  margin: 0 auto;
+  width: 600px;
+  height: 800px;
+  border: 1px solid transparent;
+  position: relative;
 }
 
 #mainimg .img_box {
-    margin-top: 230px;
-    width: 800px;
-    height: 1000px;
-    border-radius: 450px 450px 0 0;
-    overflow: hidden;
-    position: relative;
-    transition: all 0.5s;
+  margin-top: 250px;
+  width: 600px;
+  height: 800px;
+  border-radius: 300px 300px 0 0;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s;
 }
 
 #main img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 
 #main h2 {
-    display: none;
-    position: absolute;
-    top: 170px;
-    left: -280px;
-    float: left;
-    width: 100%;
-    font-size: 175px;
-    padding-right: 100px;
-    box-sizing: border-box;
-    color: orangered;
-    font-family: 'Aboreto', cursive;
-    font-family: 'Playfair Display SC', serif;
+  display: none;
+  position: absolute;
+  top: 170px;
+  left: -230px;
+  float: left;
+  width: 100%;
+  font-size: 150px;
+  padding-right: 100px;
+  box-sizing: border-box;
+  color: orangered;
+  font-family: "Aboreto", cursive;
+  font-family: "Playfair Display SC", serif;
 }
 
 #main h3 {
-    display: none;
-    transform: rotate(90deg);
-    position: absolute;
-    top: 500px;
-    left: 450px;
-    color: palegoldenrod;
-    font-size: 150px;
-    font-family: 'Aboreto', cursive;
-    font-family: 'Playfair Display SC', serif;
+  display: none;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 400px;
+  left: 350px;
+  color: palegoldenrod;
+  font-size: 120px;
+  font-family: "Aboreto", cursive;
+  font-family: "Playfair Display SC", serif;
 }
 
 #main p {
-    display: none;
-    position: absolute;
-    top: 800px;
-    left: 150px;
-    font-size: 45px;
-    font-weight: 900;
-    color: white;
-    font-family: 'Aboreto', cursive;
-    font-family: 'Playfair Display SC', serif;
+  display: none;
+  position: absolute;
+  top: 580px;
+  left: 150px;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  font-family: "Aboreto", cursive;
+  font-family: "Playfair Display SC", serif;
+}
+
+#box {
+  width: 100%;
+  height: 400px;
+  background-color: #806d61;
+}
+
+#box .txt {
+  padding-top: 150px;
+  margin: 0 auto;
+  width: 800px;
+  height: 120px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  font-family: "Aboreto", cursive;
+  font-family: "Playfair Display SC", serif;
+}
+
+.ellipse {
+  position: absolute;
+  top: 300px;
+  left: -50px;
+  width: 700px;
+  height: 300px;
+  border: 0.5px solid #ffffff;
+  border-radius: 50%;
+  transform: rotate(160deg);
+}
+
+/*프로필*/
+
+#profile {
+  margin: 0 auto;
+  width: 1400px;
+  height: 2000px;
 }
 
 
-#box{
-    border-top: 1.5px solid #fff;
-    margin-top: 140px;
-    width: 100%;
-    height: 200px;
+#profile_h {
+  width: 100%;
+  height: 300px;
 }
 
-#box .txt{
-    padding-top: 30px;
-    margin: 0 auto;
-    width: 800px;
-    height: 120px;
-    line-height: 30px;
-    text-align: center;
-    font-size: 18px;
-    color: #fff;
-    font-family: 'Aboreto', cursive;
-    font-family: 'Playfair Display SC', serif;
+#profile_h h2 {
+  padding-top: 200px;
+  text-align: right;
+  font-size: 80px;
+  color: white;
+  line-height: 10px;
+}
+
+#profile_b {
+  width: 100%;
+  height: 700px;
 }
 
 
 
 
+#profile_b .box {
+  margin-left: 30px;
+  width: 1400px;
+}
+
+#profile_b .pic {
+  margin-top: 100px;
+  float: left;
+  width: 500px;
+  height: 700px;
+}
+
+#profile_b .pic img {
+  width: 100%;
+  height: 100%;
+}
+
+#profile_b .con {
+  margin-top: 100px;
+  float: left;
+  width: 800px;
+  height: 700px;
+  background-color: white;
+}
+
+#profile_b .con h3 {
+  margin: 30px 0 0 40px;
+  font-size: 50px;
+  color: tan;
+}
+
+#profile_b .c_box1 {
+  margin: 40px 0 0 40px;
+  width: 700px;
+  height: 170px;
+}
+
+#profile_b .c_box1 h3 {
+  margin: 15px 0 30px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(10, 10, 10);
+}
+
+#profile_b .c_box1 p {
+  font-size: 15px;
+}
+
+#profile_b .c_box2 {
+  margin: 10px 0 0 40px;
+  width: 700px;
+  height: 150px;
+}
+
+#profile_b .c_box2 h3 {
+  margin: 15px 0 30px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(10, 10, 10);
+}
+
+#profile_b .c_box2 p {
+  font-size: 15px;
+}
+
+#profile_b .c_box3 {
+  margin: 10px 0 0 40px;
+  width: 700px;
+  height: 150px;
+}
+
+#profile_b .c_box3 h3 {
+  margin: 15px 0 30px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(10, 10, 10);
+}
+
+#profile_b .c_box3 p {
+  font-size: 15px;
+}
 
 
 
+/*스킬*/
 
+#skill {
+  margin: 0 auto;
+  width: 1300px;
+  height: 1100px;
+}
 
+#skill_h {
+  width: 100%;
+  height: 200px;
+}
+
+#skill_h h2 {
+  padding-top: 100px;
+  text-align: right;
+  font-size: 80px;
+  color: white;
+  line-height: 10px;
+}
+
+#skill_b {
+  width: 100%;
+  height: 700px;
+}
+
+#skill_b ul {
+  width: 1300px;
+}
+
+#skill_b .skill {
+  margin: 80px 100px 0 100px;
+  float: left;
+  width: 1200px;
+  height: 500px;
+  background-color: white;
+  border: 1px solid transparent;
+  overflow: auto;
+}
+
+#skill_b .skill ul {
+  padding: 5% 5%;
+}
+
+#skill_b .skill li {
+  width: 80%;
+  height: 200px;
+}
+
+#skill_b .skill li h4 {
+  font-size: 25px;
+}
+
+#skill_b .skill li p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/*프로젝트*/
+
+#project {
+  margin: 0 auto;
+  width: 1400px;
+  height: 1100px;
+}
+
+#project_h {
+  width: 100%;
+  height: 200px;
+}
+
+#project_h h2 {
+  padding: 40px 150px 0 0;
+  text-align: right;
+  font-size: 80px;
+  color: white;
+  line-height: 10px;
+}
+
+#project_b {
+  width: 100%;
+  height: 700px;
+}
+
+#project_b ul {
+  margin-left: 15px;
+  width: 1400px;
+}
+
+#project_b li {
+  margin-right: 1%;
+  float: left;
+  width: 23.5%;
+  height: 500px;
+  background-color: white;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+}
+
+#project_b li img {
+  width: 100%;
+  overflow: hidden;
+  filter: brightness(0.5);
+}
+
+#project_b .btn {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 80px;
+  height: 80px;
+  color: white;
+}
+
+#project_b .btn i {
+  font-size: 80px;
+}
+
+/*콘택*/
+
+#contact {
+  width: 100%;
+  height: 1000px;
+}
+
+#contact {
+  margin: 0 auto;
+  width: 1300px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+#contact_h {
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
+}
+
+#contact_h h2 {
+  padding-top: 40px;
+  text-align: right;
+  font-size: 80px;
+  color: white;
+  line-height: 10px;
+}
+
+#contact_b {
+  width: 100%;
+  height: 550px;
+}
+
+#contact_b .finish {
+  margin-left: 50px;
+  float: left;
+  width: 800px;
+  height: 600px;
+  background-color: #fff;
+}
+
+#contact_b .finish ul {
+  padding: 10% 10%;
+}
+
+#contact_b .finish li {
+  width: 80%;
+  height: 150px;
+}
+
+#contact_b .finish li h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#contact_b .finish li p {
+  font-size: 18px;
+}
+
+#contact_b .mail {
+  float: left;
+  margin: 100px 0 0 50px;
+  width: 280px;
+}
+
+#form .field {
+  margin-bottom: 10px;
+}
+
+#form .field label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+#form .field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+#form input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460aa;
+  color: #fff;
+  border: none;
+}
+
+/*퀵메뉴*/
+
+#q_mn {
+  position: absolute;
+  right: 20px;
+  top: 300px;
+  z-index: 9999;
+  width: 80px;
+  height: 250px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+#q_mn ul.qnav {
+  margin: 0 auto;
+  list-style: none;
+  width: 50px;
+}
+
+#q_mn li {
+  margin: 25px 0 0 20px;
+}
+
+#q_mn ul.qnav li a {
+  color: #ccc;
+}
+
+#q_mn ul.qnav li.on a {
+  color: rgb(15, 15, 15);
+}
