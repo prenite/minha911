@@ -17,7 +17,9 @@
 #menu {
   height: 100%;
   position: fixed;
-  background-color: #e0cb97;
+  background-color: #806d61;
+  /*#D2C7BD, #806d61 */
+  /*#CBAD8D*/
   width: 230px;
   transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
   transform: translateX(-100%);
@@ -42,6 +44,8 @@
 .menu-inner a {
   font-size: 25px;
   color: white;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
 }
 
 #blob {
@@ -55,7 +59,7 @@
 
 #blob-path {
   height: 100%;
-  fill: #e0cb97;
+  fill: #806d61;
 }
 
 .hamburger {
@@ -166,7 +170,8 @@
 #box {
   width: 100%;
   height: 400px;
-  background-color: #806d61;
+  background-color: #CBAD8D;
+  /*#CBAD8D, #806d61*/
 }
 
 #box .txt {
@@ -417,14 +422,14 @@
 
 .intro_b .area1 .text1 h3 {
   font-size: 26px;
-  color: tan;
+  color: #D2C7BD;
   margin-bottom: 30px;
   line-height: 50px;
 }
 
 .intro_b .area1 .text1 p {
   font-size: 18px;
-  color: #efe0bb;
+  color: #EBE3DB;
   line-height: 40px;
 }
 
@@ -470,14 +475,14 @@
 
 .intro_b .area2 .text2 h3 {
   font-size: 26px;
-  color: tan;
+  color: #D2C7BD;
   margin-bottom: 30px;
   line-height: 50px;
 }
 
 .intro_b .area2 .text2 p {
   font-size: 18px;
-  color: #efe0bb;
+  color: #EBE3DB;
   line-height: 40px;
 }
 
@@ -524,41 +529,48 @@
 
 .intro_b .area3 .text3 h3 {
   font-size: 26px;
-  color: tan;
+  color: #D2C7BD;
   margin-bottom: 30px;
   line-height: 50px;
 }
 
 .intro_b .area3 .text3 p {
   font-size: 18px;
-  color: #efe0bb;
+  color: #EBE3DB;
   line-height: 40px;
 }
+
+
+
+
 
 /*스킬*/
 
 #skill {
   margin: 0 auto;
   width: 1300px;
-  height: 1100px;
+  height: 1800px;
 }
 
 #skill_h {
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
 
 #skill_h h2 {
-  padding-top: 100px;
-  text-align: right;
-  font-size: 80px;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 60px;
   color: white;
-  line-height: 10px;
+  line-height: 70px;
+  font-family: "Playfair Display SC", serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
 #skill_b {
   width: 100%;
-  height: 700px;
+  height: 1650px;
 }
 
 #skill_b ul {
@@ -569,29 +581,37 @@
   margin: 80px 100px 0 100px;
   float: left;
   width: 1200px;
-  height: 500px;
+  height: 1400px;
   background-color: white;
   border: 1px solid transparent;
-  overflow: auto;
 }
 
 #skill_b .skill ul {
-  padding: 5% 5%;
+  padding: 1% 5%;
 }
 
 #skill_b .skill li {
+  padding-top: 20px;
   width: 80%;
-  height: 200px;
+  height: 150px;
+  border-bottom: 1px solid black;
 }
 
 #skill_b .skill li h4 {
-  font-size: 25px;
+  font-size: 20px;
+  font-family: "NanumSquare";
 }
 
 #skill_b .skill li p {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: "NanumSquare";
+  line-height: 30px;
 }
+
+
+
+
 
 /*프로젝트*/
 
@@ -603,15 +623,18 @@
 
 #project_h {
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
 
 #project_h h2 {
-  padding: 40px 150px 0 0;
-  text-align: right;
-  font-size: 80px;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 60px;
   color: white;
-  line-height: 10px;
+  line-height: 70px;
+  font-family: "Playfair Display SC", serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
 #project_b {
@@ -653,6 +676,9 @@
 #project_b .btn i {
   font-size: 80px;
 }
+
+
+
 
 /*콘택*/
 
