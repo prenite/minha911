@@ -1,9 +1,22 @@
 $(document).ready(function () {
-
   var menu = $(".qnav > li");
   var contents = $("#wrap > div");
 
-  $(".nav> li").click(function (event) {
+  //퀵메뉴 클릭시 해당 파트로 스크롤 이동
+  //$(".nav> li").click(function (event) {
+  //  event.preventDefault();
+
+  //  var tg = $(this);
+  //  var i = tg.index();
+
+  //  var section = $("#wrap > div").eq(i);
+  //  var tt = section.offset().top;
+
+  //  $("html, body").stop().animate({ scrollTop: tt });
+  //});
+
+  //사이드메뉴 클릭시 해당 파트로 스크롤 이동
+  $(".qnav> li").click(function (event) {
     event.preventDefault();
 
     var tg = $(this);
@@ -23,6 +36,14 @@ $(document).ready(function () {
     $(this).css({ color: "white" });
   });
 
+  //마우스오버시 퀵메뉴 글자 색깔 변경
+  //$("#q_mn a").mouseover(function () {
+  //  $(this).css({ color: "orangered" });
+  //});
+  //$("#q_mn a").mouseleave(function () {
+  //  $(this).css({ color: "black" });
+  //});
+
   //이미지 아래에서 나타남
 
   $(".img_box").delay(1000).stop().animate({ top: "-170", opacity: 1 });
@@ -34,6 +55,7 @@ $(document).ready(function () {
 
   $("#main h3").fadeIn(3000, "linear");
 
+  //사이드메뉴 동적 기능
   var height = window.innerHeight,
     x = 0,
     y = height / 2,
@@ -72,7 +94,7 @@ $(document).ready(function () {
   ) {
     return (
       changeInValue *
-      (-Math.pow(2, (-10 * currentIteration) / totalIterations) + 1) +
+        (-Math.pow(2, (-10 * currentIteration) / totalIterations) + 1) +
       startValue
     );
   }

@@ -170,7 +170,7 @@
 #box {
   width: 100%;
   height: 400px;
-  background-color: #CBAD8D;
+  background-color: #cbad8d;
   /*#CBAD8D, #806d61*/
 }
 
@@ -382,23 +382,23 @@
 
 .intro_b .area1 {
   width: 100%;
-  height: 600px;
+  height: 700px;
   position: relative;
 }
 
 .intro_b .area1 .frame {
   float: left;
-  width: 500px;
+  width: 480px;
   height: 600px;
-  border-radius: 250px 250px 0 0;
+  border-radius: 240px 240px 0 0;
   border: 1px solid white;
 }
 
 .intro_b .area1 .imgbox1 {
   float: left;
-  width: 500px;
+  width: 480px;
   height: 600px;
-  border-radius: 250px 250px 0 0;
+  border-radius: 240px 240px 0 0;
   border: transparent;
   overflow: hidden;
   position: absolute;
@@ -422,14 +422,14 @@
 
 .intro_b .area1 .text1 h3 {
   font-size: 26px;
-  color: #D2C7BD;
+  color: #d2c7bd;
   margin-bottom: 30px;
   line-height: 50px;
 }
 
 .intro_b .area1 .text1 p {
   font-size: 18px;
-  color: #EBE3DB;
+  color: #ebe3db;
   line-height: 40px;
 }
 
@@ -467,7 +467,7 @@
   width: 700px;
   height: 250px;
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 50px;
   font-family: "NanumSquare";
   letter-spacing: 2px;
@@ -475,14 +475,14 @@
 
 .intro_b .area2 .text2 h3 {
   font-size: 26px;
-  color: #D2C7BD;
+  color: #d2c7bd;
   margin-bottom: 30px;
   line-height: 50px;
 }
 
 .intro_b .area2 .text2 p {
   font-size: 18px;
-  color: #EBE3DB;
+  color: #ebe3db;
   line-height: 40px;
 }
 
@@ -529,20 +529,16 @@
 
 .intro_b .area3 .text3 h3 {
   font-size: 26px;
-  color: #D2C7BD;
+  color: #d2c7bd;
   margin-bottom: 30px;
   line-height: 50px;
 }
 
 .intro_b .area3 .text3 p {
   font-size: 18px;
-  color: #EBE3DB;
+  color: #ebe3db;
   line-height: 40px;
 }
-
-
-
-
 
 /*스킬*/
 
@@ -609,10 +605,6 @@
   line-height: 30px;
 }
 
-
-
-
-
 /*프로젝트*/
 
 #project {
@@ -640,6 +632,7 @@
 #project_b {
   width: 100%;
   height: 700px;
+  position: relative;
 }
 
 #project_b ul {
@@ -664,21 +657,483 @@
   filter: brightness(0.5);
 }
 
-#project_b .btn {
+#project_b .btn1 {
   position: absolute;
   top: 40%;
   left: 40%;
   width: 80px;
   height: 80px;
   color: white;
+  cursor: pointer;
 }
 
-#project_b .btn i {
+#project_b .btn1 i {
   font-size: 80px;
 }
 
+#project_b .btn1 h3 {
+  font-size: 25px;
+}
 
+#project_b .btn2 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 80px;
+  height: 80px;
+  color: white;
+  cursor: pointer;
+}
 
+#project_b .btn2 i {
+  font-size: 80px;
+}
+
+#project_b .btn2 h3 {
+  font-size: 25px;
+}
+
+#project_b .btn3 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 80px;
+  height: 80px;
+  color: white;
+  cursor: pointer;
+}
+
+#project_b .btn3 i {
+  font-size: 80px;
+}
+
+#project_b .btn3 h3 {
+  font-size: 25px;
+}
+
+#project_b .btn4 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 80px;
+  height: 80px;
+  color: white;
+  cursor: pointer;
+}
+
+#project_b .btn4 i {
+  font-size: 80px;
+}
+
+#project_b .btn4 h3 {
+  font-size: 25px;
+}
+
+/*프로젝트 팝업창*/
+
+.back {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #c7c7c754;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#popup1 {
+  display: none;
+}
+
+#popup1 {
+  width: 1200px;
+  height: 700px;
+  position: absolute;
+  top: -100px;
+  left: 10%;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+  font-family: "NanumSquare";
+}
+
+#popup1 .in {
+  padding: 8%;
+}
+
+#popup1 .fic {
+  width: 340px;
+  height: 500px;
+  float: left;
+  overflow: hidden;
+}
+
+#popup1 .fic img {
+  width: 100%;
+}
+
+#popup1 .con {
+  width: 600px;
+  height: 500px;
+  float: right;
+}
+
+#popup1 .in h2 {
+  font-size: 40px;
+  color: black;
+  margin-bottom: 35px;
+}
+
+#popup1 .in .txt {
+  width: 100%;
+  height: 380px;
+}
+
+#popup1 .in p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+#popup1 .popbtn {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 400px;
+  height: 50px;
+  font-size: 20px;
+}
+
+#popup1 .in .close {
+  width: 180px;
+  height: 50px;
+  background-color: #fff584;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+}
+
+#popup1 .in .close h3 {
+  padding-top: 10px;
+}
+
+#popup1 .in .close:hover {
+  background-color: orangered;
+  color: white;
+  border: 1px solid orangered;
+}
+
+#popup1 .in .link {
+  width: 180px;
+  height: 50px;
+  background-color: #fff584;
+  float: right;
+  text-align: center;
+}
+
+#popup1 .in .link h3 {
+  padding-top: 10px;
+}
+
+#popup1 .in .link:hover {
+  background-color: orangered;
+  color: white;
+  border: 1px solid orangered;
+}
+
+#popup2 {
+  display: none;
+}
+
+#popup2 {
+  width: 1200px;
+  height: 700px;
+  position: absolute;
+  top: -100px;
+  left: 10%;
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
+  font-family: "NanumSquare";
+}
+
+#popup2 .in {
+  padding: 8%;
+}
+
+#popup2 .in .txt {
+  width: 100%;
+  height: 380px;
+}
+
+#popup2 .fic {
+  width: 340px;
+  height: 500px;
+  float: left;
+  overflow: hidden;
+}
+
+#popup2 .fic img {
+  width: 100%;
+  overflow: hidden;
+}
+
+#popup2 .con {
+  width: 600px;
+  height: 500px;
+  float: right;
+}
+
+#popup2 .in h2 {
+  font-size: 40px;
+  color: black;
+  margin-bottom: 35px;
+}
+
+#popup2 .in p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+#popup2 .popbtn {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 400px;
+  height: 50px;
+  font-size: 20px;
+}
+
+#popup2 .in .close {
+  width: 180px;
+  height: 50px;
+  background-color: #fff584;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+}
+
+#popup2 .in .close h3 {
+  padding-top: 10px;
+}
+
+#popup2 .in .close:hover {
+  background-color: orangered;
+  color: white;
+  border: 1px solid orangered;
+}
+
+#popup2 .in .link {
+  width: 180px;
+  height: 50px;
+  background-color: #fff584;
+  float: right;
+  text-align: center;
+}
+
+#popup2 .in .link h3 {
+  padding-top: 10px;
+}
+
+#popup2 .in .link:hover {
+  background-color: orangered;
+  color: white;
+  border: 1px solid orangered;
+}
+
+#popup3 {
+  display: none;
+}
+
+#popup3 {
+  width: 1200px;
+  height: 700px;
+  position: absolute;
+  top: -100px;
+  left: 10%;
+  background-color: rgb(255, 255, 255);
+  z-index: 4;
+  font-family: "NanumSquare";
+}
+
+#popup3 .in {
+  padding: 8%;
+}
+
+#popup3 .fic {
+  width: 340px;
+  height: 500px;
+  float: left;
+  overflow: hidden;
+}
+
+#popup3 .fic img {
+  width: 100%;
+}
+
+#popup3 .con {
+  width: 600px;
+  height: 500px;
+  float: right;
+}
+
+#popup3 .in h2 {
+  font-size: 40px;
+  color: black;
+  margin-bottom: 35px;
+}
+
+#popup3 .in .txt {
+  width: 100%;
+  height: 380px;
+}
+
+#popup3 .in p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+#popup3 .popbtn {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 400px;
+  height: 50px;
+  font-size: 20px;
+}
+
+#popup3 .in .close {
+  width: 180px;
+  height: 50px;
+  background-color: #fff584;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+}
+
+#popup3 .in .close h3 {
+  padding-top: 10px;
+}
+
+#popup3 .in .close:hover {
+  background-color: orangered;
+  color: white;
+  border: 1px solid orangered;
+}
+
+#popup3 .in .link {
+  width: 180px;
+  height: 50px;
+  background-color: #fff584;
+  float: right;
+  text-align: center;
+}
+
+#popup3 .in .link h3 {
+  padding-top: 10px;
+}
+
+#popup3 .in .link:hover {
+  background-color: orangered;
+  color: white;
+  border: 1px solid orangered;
+}
+
+#popup4 {
+  display: none;
+}
+
+#popup4 {
+  width: 1200px;
+  height: 700px;
+  position: absolute;
+  top: -100px;
+  left: 10%;
+  background-color: rgb(255, 255, 255);
+  z-index: 5;
+  font-family: "NanumSquare";
+}
+
+#popup4 .in {
+  padding: 8%;
+}
+
+#popup4 .fic {
+  width: 340px;
+  height: 500px;
+  float: left;
+  overflow: hidden;
+}
+
+#popup4 .fic img {
+  width: 100%;
+}
+
+#popup4 .con {
+  width: 600px;
+  height: 500px;
+  float: right;
+}
+
+#popup4 .in h2 {
+  font-size: 40px;
+  color: black;
+  margin-bottom: 40px;
+}
+
+#popup4 .in .txt {
+  width: 100%;
+  height: 380px;
+}
+
+#popup4 .in p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+#popup4 .popbtn {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 400px;
+  height: 50px;
+  font-size: 20px;
+}
+
+#popup4 .in .close {
+  width: 180px;
+  height: 50px;
+  background-color: #fff584;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+}
+
+#popup4 .in .close h3 {
+  padding-top: 10px;
+}
+
+#popup4 .in .close:hover {
+  background-color: orangered;
+  color: white;
+  border: 1px solid orangered;
+}
+
+#popup4 .in .link {
+  width: 180px;
+  height: 50px;
+  background-color: #fff584;
+  float: right;
+  text-align: center;
+}
+
+#popup4 .in .link h3 {
+  padding-top: 10px;
+}
+
+#popup4 .in .link:hover {
+  background-color: orangered;
+  color: white;
+  border: 1px solid orangered;
+}
 
 /*콘택*/
 
@@ -703,9 +1158,12 @@
 #contact_h h2 {
   padding-top: 40px;
   text-align: right;
-  font-size: 80px;
+  font-size: 60px;
   color: white;
   line-height: 10px;
+  font-family: "Playfair Display SC", serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
 #contact_b {
@@ -773,12 +1231,13 @@
 
 /*퀵메뉴*/
 
+/*
 #q_mn {
   position: absolute;
   right: 20px;
   top: 300px;
   z-index: 9999;
-  width: 80px;
+  width: 100px;
   height: 250px;
   border-radius: 6px;
   border: 1px solid #ccc;
@@ -802,3 +1261,4 @@
 #q_mn ul.qnav li.on a {
   color: rgb(15, 15, 15);
 }
+*/
